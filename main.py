@@ -6,7 +6,7 @@ from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
 
-#app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 @app.get("/")
@@ -31,8 +31,7 @@ def stake_conference_program2(request: Request, meeting:str):
         program_template = "2024_saturday_night.html"
     
     return templates.TemplateResponse(program_template, {"request":request})
-'''
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
-'''

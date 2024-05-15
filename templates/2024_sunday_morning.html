@@ -1,89 +1,102 @@
 {% extends "template.html" %}
 
-{% block title %}2024 Palmyra NY Stake Conference - Adult Leadership Session{% endblock %}
+{% block title %}2024 Palmyra NY Stake Conference - General Session{% endblock %}
 
 {% block content %}
-    <p class="text-center pt-8 font-bold">Palmyra NY Stake Conference</p>
-    <p class="text-center font-bold">SUNDAY GENERAL SESSION</p>
-    <p class="text-center font-normal ">Sunday, May 19 | 10:00 AM – 12:00 PM</p>
-    <p class="text-center roboto-regular-italic">Christ as our Personal Savior and Redeemer</p>
-    <table class="border-separate p-8 leading-10 border-separate border-spacing-y-8">
+    <p class="text-center pt-8 font-bold">PALMYRA NEW YORK STAKE</p>
+    <p class="text-center font-bold">STAKE CONFERENCE</p>
+    <p class="text-center font-bold">GENERAL SESSION</p>
+    <p class="text-center font-normal">SUNDAY, MAY 19, 2024<br/>10:00 A.M. TO 12:00 P.M.</p>
+    <p class="text-center font-normal">PALMYRA NEW YORK STAKE CENTER</p>
+    <p class="p-8">
+        <img class="shadow-md" src="{{ url_for('static', path='/temple.jpg') }}"/>
+    </p>
+    <table class="border-separate p-8 border-separate font-normal">
+        <tr>
+            <td class="text-center font-bold">"The temple <i>is</i> the gateway to the greatest blessings God has in store for each of us, for the temple is the only place on earth where we may receive <i>all</i> of the blessings promised to Abraham."</td>
+        </tr>
+        <tr>
+            <td class="text-right font-bold">Russell M. Nelson</td>
+        </tr>
+    </table>
+
+    <table class="border-separate p-8 leading-10 border-separate border-spacing-y-8 font-normal">
         <tbody>
             <tr>
-                <td>Presiding:</td>
-                <td><a class="text-sky-600 underline" target="_blank" href="https://www.churchofjesuschrist.org/learn/allen-d-haynie?lang=eng">Elder Allen D. Haynie, Area President North America Northeast Area</a></td>
+                <td class="text-left">Presiding:</td>
+                <td class="text-right"><a class="text-sky-600 underline" target="_blank" href="https://www.churchofjesuschrist.org/learn/allen-d-haynie?lang=eng">Elder Allen D. Haynie</a><br/><i>Area President North America Northeast Area</i></td>
             </tr>
             <tr>
-                <td>Conducting:</td>
-                <td>President Robert R. Mayo, Palmyra Stake Presidency Second Counselor</td>
+                <td class="text-left">Conducting:</td>
+                <td class="text-right">President Robert R. Mayo<br/><i>Palmyra Stake Presidency 2nd Counselor</i></td>
             </tr>
             <tr>
-                <td>Chorister:</td>
-                <td>Jessica Vance - Palmyra Ward</td>
+                <td class="text-left">Chorister:</td>
+                <td class="text-right">Jessica Vance - <i>Palmyra Ward</i></td>
             </tr>
             <tr>
-                <td>Organist:</td>
-                <td>Jessica Pierson - Mendon Ward</td>
+                <td class="text-left">Organist:</td>
+                <td class="text-right">Jessica Pierson - <i>Mendon Ward</i></td>
             </tr>
             <tr>
-                <td>Welcome:</td>
-                <td>President Robert R. Mayo, 2nd Counselor, Stake Presidency</td>
+                <td class="text-left">Welcome:</td>
+                <td class="text-right">President Robert R. Mayo<br/><i>Palmyra Stake Presidency 2nd Counselor</i></td>
             </tr>
             <tr>
-                <td>Opening Hymn:</td>
-                <td><a class="text-sky-600 underline" target="_blank" href="https://www.churchofjesuschrist.org/media/music/songs/the-lord-is-my-light?crumbs=hymns&lang=eng">“The Lord Is My Light” - Hymn #89</a></td>
+                <td class="text-left">Opening Hymn:</td>
+                <td class="text-right"><a class="text-sky-600 underline" target="_blank" href="https://www.churchofjesuschrist.org/media/music/songs/the-lord-is-my-light?crumbs=hymns&lang=eng">#89, <i>"The Lord Is My Light"</i></a></td>
             </tr>
             <tr>
-                <td>Invocation:</td>
-                <td>Suzette Campnell - Boughton Hill Ward</td>
+                <td class="text-left">Invocation:</td>
+                <td class="text-right">Suzette Campnell - <i>Boughton Hill Ward</i></td>
             </tr>
             <tr>
-                <td>Stake Business:</td>
-                <td>President Robert R. Mayo, 2nd Counselor, Stake Presidency</td>
+                <td class="text-left">Stake Business:</td>
+                <td class="text-right">President Robert R. Mayo<br/><i>Palmyra Stake Presidency 2nd Counselor</i></td>
             </tr>
             <tr>
-                <td>Musical Number:</td>
-                <td>“I Feel my Savior’s Love” - Stake Primary Choir</td>
+                <td class="text-left">Musical Number:</td>
+                <td class="text-right"><i>"I Feel my Savior's Love"</i> - Stake Primary Choir</td>
             </tr>
             <tr>
-                <td>Speaker:</td>
-                <td>President Edmund S. Nabrotzky, Palmyra Stake President</td>
+                <td class="text-left">Speaker:</td>
+                <td class="text-right">President Edmund S. Nabrotzky<br/><i>Palmyra Stake President</i></td>
             </tr>
             <tr>
-                <td>Speaker:</td>
-                <td>Grace Bylund - Mendon Ward</td>
+                <td class="text-left">Speaker:</td>
+                <td class="text-right">Grace Bylund - <i>Mendon Ward</i></td>
             </tr>
             <tr>
-                <td>Speaker:</td>
-                <td>Jacques Figaro - Penn Yan Branch</td>
+                <td class="text-left">Speaker:</td>
+                <td class="text-right">Jacques Figaro - <i>Penn Yan Branch</i></td>
             </tr>
             <tr>
-                <td>Speaker:</td>
-                <td>Rosemary Christensen - Whitney Ward</td>
+                <td class="text-left">Speaker:</td>
+                <td class="text-right">Rosemary Christensen - <i>Whitney Ward</i></td>
             </tr>
             <tr>
-                <td>Speaker:</td>
-                <td><a class="text-sky-600 underline" target="_blank" href="https://newsroom.churchofjesuschrist.org/article/church-historic-sites-leaders-who-will-begin-serving-2024">President Thomas B. McCoy and Sister Lani Jo McCoy, New York and Pennsylvania Historic Sites Mission</a></td>
+                <td class="text-left">Speaker:</td>
+                <td class="text-right"><a class="text-sky-600 underline" target="_blank" href="https://newsroom.churchofjesuschrist.org/article/church-historic-sites-leaders-who-will-begin-serving-2024">President Thomas B. McCoy &amp; Sister Lani Jo McCoy</a><br/><i>New York and Pennsylvania Historic Sites Mission</i></td>
             </tr>
             <tr>
-                <td>Intermediate Hymn:</td>
-                <td><a class="text-sky-600 underline" target="_blank" href="https://www.churchofjesuschrist.org/media/music/songs/redeemer-of-israel?crumbs=hymns&lang=eng">“Redeemer of Israel” - Hymn #6</a></td>
+                <td class="text-left">Intermediate Hymn:</td>
+                <td class="text-right"><a class="text-sky-600 underline" target="_blank" href="https://www.churchofjesuschrist.org/media/music/songs/redeemer-of-israel?crumbs=hymns&lang=eng">#6, <i>"Redeemer of Israel"</i></a></td>
             </tr>
             <tr>
-                <td>Speaker:</td>
-                <td><a class="text-sky-600 underline" target="_blank" href="https://www.thechurchnews.com/2021/1/16/23265244/16-new-mission-presidents-companions-ghana-colombia-korea-japan-norway-england/">President Evan Gentry and Sister Sandi Gentry, Mission President, New York Syracuse Mission</a></td>
+                <td class="text-left">Speaker:</td>
+                <td class="text-right"><a class="text-sky-600 underline" target="_blank" href="https://www.thechurchnews.com/2021/1/16/23265244/16-new-mission-presidents-companions-ghana-colombia-korea-japan-norway-england/">President Evan Gentry &amp; Sister Sandi Gentry</a><br/><i>New York Syracuse Mission</i></td>
             </tr>
             <tr>
-                <td>Speaker:</td>
-                <td>Elder Allen D. Haynie and Sister Deborah Haynie</td>
+                <td class="text-left">Speaker:</td>
+                <td class="text-right">Elder Alan D. Haynie &amp; Sister Deborah Haynie<br/><i>Area President North America Northeast Area</i></td>
             </tr>
             <tr>
-                <td>Closing Hymn:</td>
-                <td><a class="text-sky-600 underline" target="_blank" href="https://www.churchofjesuschrist.org/media/music/songs/o-thou-rock-of-our-salvation?crumbs=hymns&lang=eng">“O, Thou Rock of Our Salvation” - Hymn #258</a></td>
+                <td class="text-left">Closing Hymn:</td>
+                <td class="text-right"><a class="text-sky-600 underline" target="_blank" href="https://www.churchofjesuschrist.org/media/music/songs/o-thou-rock-of-our-salvation?crumbs=hymns&lang=eng"># 258 <i>"O, Thou Rock of Our Salvation"</i></a></td>
             </tr>
             <tr>
-                <td>Benediction:</td>
-                <td>Emily Underwood - Canandaigua Ward</td>
+                <td class="text-left">Benediction:</td>
+                <td class="text-right">Emily Underwood - <i>Canandaigua Ward</i></td>
             </tr>
         </tbody>
     </table>
