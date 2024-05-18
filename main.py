@@ -14,7 +14,7 @@ def root(request: Request):
     # print(str(request.url))
     # program_template = "2024_sunday_morning.html"
     program_template = "redirect.html"
-    program_template = "2024_saturday_night.html"
+    #program_template = "2024_saturday_night.html"
     #program_template = "2024_leadership.html"
     return templates.TemplateResponse(program_template, {"request": request})
 
