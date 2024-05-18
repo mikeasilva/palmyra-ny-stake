@@ -11,8 +11,8 @@ templates = Jinja2Templates(directory="templates")
 
 @app.get("/", response_class=HTMLResponse)
 def root(request: Request):
-    print(str(request.url))
-    #program_template = "2024_sunday_morning.html"
+    # print(str(request.url))
+    # program_template = "2024_sunday_morning.html"
     program_template = "redirect.html"
     program_template = "2024_saturday_night.html"
     program_template = "2024_leadership.html"
@@ -30,9 +30,10 @@ def stake_conference_program(request: Request, meeting: str):
 
     return templates.TemplateResponse(program_template, {"request": request})
 
-'''
+
+"""
 if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="0.0.0.0", port=8000)
-'''
+"""
