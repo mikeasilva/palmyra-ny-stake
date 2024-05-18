@@ -15,10 +15,10 @@ def root(request: Request):
     # program_template = "2024_sunday_morning.html"
     program_template = "redirect.html"
     program_template = "2024_saturday_night.html"
-    program_template = "2024_leadership.html"
+    #program_template = "2024_leadership.html"
     return templates.TemplateResponse(program_template, {"request": request})
 
-
+"""
 @app.get("/conference/program/{meeting}", response_class=HTMLResponse)
 def stake_conference_program(request: Request, meeting: str):
     if meeting == "sunday":
@@ -31,7 +31,7 @@ def stake_conference_program(request: Request, meeting: str):
     return templates.TemplateResponse(program_template, {"request": request})
 
 
-"""
+
 if __name__ == "__main__":
     import uvicorn
 
