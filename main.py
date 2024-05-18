@@ -11,7 +11,9 @@ templates = Jinja2Templates(directory="templates")
 
 @app.get("/", response_class=HTMLResponse)
 def root(request: Request):
-    program_template = "2024_sunday_morning.html"
+    print(str(request.url))
+    #program_template = "2024_sunday_morning.html"
+    program_template = "redirect.html"
     program_template = "2024_saturday_night.html"
     program_template = "2024_leadership.html"
     return templates.TemplateResponse(program_template, {"request": request})
