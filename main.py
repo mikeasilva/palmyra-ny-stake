@@ -19,7 +19,7 @@ def root(request: Request):
 
 @app.get("/conference/program/{meeting}", response_class=HTMLResponse)
 def stake_conference_program(request: Request, meeting: str):
-    if meeting == "sunday":
+    if meeting == "general":
         program_template = "general.html"
     elif meeting == "leadership":
         program_template = "leadership.html"
