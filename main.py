@@ -13,7 +13,7 @@ templates = Jinja2Templates(directory="templates")
 def root(request: Request):
     #program_template = "redirect.html"
     program_template = "general.html"
-    program_template = "adult.html"
+    #program_template = "adult.html"
     #program_template = "leadership.html"
     return templates.TemplateResponse(program_template, {"request": request})
 
