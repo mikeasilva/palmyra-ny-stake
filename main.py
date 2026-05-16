@@ -31,7 +31,7 @@ def stake_conference_program(request: Request, meeting: str):
 
     return templates.TemplateResponse(request=request, name=program_template, context={"request": request})
 
-/*
+"""
 if __name__ == "__main__":
     import uvicorn
 
